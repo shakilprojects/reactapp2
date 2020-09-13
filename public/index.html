@@ -41,3 +41,70 @@
     -->
   </body>
 </html>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  $(window).on('load',function(){
+    $('#LoginModel').modal('show');
+    $('body').addClass("show-overlaw");
+  });
+  $('#LoginModel, #otpModel').on('show.bs.modal', function (e) {
+    $('body').addClass("show-overlaw");
+  }).on('hide.bs.modal', function (e) {
+    $('body').removeClass("show-overlaw");
+  });
+
+  if ($(window).width() > 768) {
+    $("#one, #two, #three").click(function(){
+      $(this).parent().siblings().children().removeClass('active');
+      $(this).addClass('active');
+      $('.QuickSMS2').slideUp();
+      $('.QuickSMS').slideDown();
+    });
+
+    $("#four, #five, #six").click(function(){
+      $(this).parent().siblings().children().removeClass('active');
+      $(this).addClass('active');
+      $('.QuickSMS').slideUp();
+      $('.QuickSMS2').slideDown();
+    });
+
+  }
+</script>
+
+
+<script>
+  if ($(window).width() < 767) {
+    $("#one, #two").click(function(){
+      $(this).parent().siblings().children().removeClass('active');
+      $(this).addClass('active');
+      $('.QuickSMSMobile2').slideUp();
+      $('.QuickSMSMobile3').slideUp();
+      $('.QuickSMSMobile').slideDown();
+    });
+
+    $("#three, #four").click(function(){
+      $(this).parent().siblings().children().removeClass('active');
+      $(this).addClass('active');
+      $('.QuickSMSMobile3').slideUp();
+      $('.QuickSMSMobile').slideUp();
+      $('.QuickSMSMobile2').slideDown();
+    });
+
+    $("#five, #six").click(function(){
+      $(this).parent().siblings().children().removeClass('active');
+      $(this).addClass('active');
+      $('.QuickSMSMobile1').slideUp();
+      $('.QuickSMSMobile2').slideUp();
+      $('.QuickSMSMobile3').slideDown();
+    });
+
+  }
+</script>
