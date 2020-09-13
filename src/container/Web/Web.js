@@ -26,7 +26,7 @@ class Web extends React.Component {
             content = <Otp></Otp>;
         }
         return (
-            <body className="teachers-day">
+            <div className="teachers-day">
             <div className="container-fluid">
                 <Header></Header>
                 <Catalogue></Catalogue>
@@ -34,7 +34,7 @@ class Web extends React.Component {
                 <Footer></Footer>
                 {/*<Home></Home>*/}
             </div>
-            </body>
+            </div>
         )
     }
 }
