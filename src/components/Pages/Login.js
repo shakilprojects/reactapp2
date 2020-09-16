@@ -40,10 +40,13 @@ class Login extends React.Component {
 
 
     fetchData() {
+        const formData = new FormData();
+        formData.append('mobile', this.state.mobile);
+        formData.append('coupon', this.state.coupon);
         axios({
             method: 'post',
             url: 'https://api.gyftr.net/gyftradmindev/api/v1/calendar/wish',
-            data: {mobile:this.state.mobile,coupon:this.state.coupon},
+            data: formData,
             headers: {'Content-Type': 'multipart/form-data'}
         })
             .then(response => {
