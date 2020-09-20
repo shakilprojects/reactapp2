@@ -10,13 +10,13 @@ const Header = () => {
                             <ul className="list-inline top-links">
                                 <li className="list-inline-item">
                                     <a href="index.html">Home</a> <span>|</span>
-                                    <a href="index.html">Contact us</a> <span>|</span> +(91) 85 1000 4444
+                                    <a href="index.html">Contact us</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-6 text-md-right col-12">
                             <ul className="list-inline top-links">
-                                <li className="list-inline-item">Welcome to GyFTR.com!</li>
+                                <li className="list-inline-item"></li>
                                 <li className="list-inline-item"><a href="#" data-toggle="modal" data-target="#login">Login/Register</a></li>
                             </ul>
                         </div>
@@ -28,7 +28,7 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center center-logo">
-                            <a href="index.html"><img src="images/GyFTR-Logo.png" className="img-fluid"/></a>
+                            <a href="index.html"><img src="images/logo.png" className="img-fluid"/></a>
                         </div>
                     </div>
                 </div>

@@ -167,9 +167,8 @@ const Footer = () => {
                             <div className="col collepsMobileTwo">
                                 <h4>CUSTOMER CARE</h4>
                                 <ul className="footer-linke">
-                                    <li><a href="#">Helpline 1800419915</a></li>
+                                    <li><a href="#">Helpline</a></li>
                                     <li><a href="#">Request a Call Back</a></li>
-                                    <li><a href="mailto:help@gyftr.com">help@gyftr.com</a></li>
                                     <li><a href="#">FAQs</a></li>
                                     <li><a href="#">Program T&amp;C</a></li>
                                 </ul>
@@ -180,7 +179,6 @@ const Footer = () => {
                                     <li><a href="#">Login</a></li>
                                     <li><a href="#">My Transactions</a></li>
                                     <li><a href="#">My Profile</a></li>
-                                    <li><a href="#">About BPCL PetroMiles</a></li>
                                 </ul>
                             </div>
                             <div className="col">
@@ -223,24 +221,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="container-fluid footerLast">
-                <div className="row">
-                    <div className="container">
-                        <div className="row align-items-center text-center">
-                            <div className="col-12 col-md-8 text-md-left">© 2016. Vouchagram India Pvt. Ltd <span
-                                className="pr-2 pl-2">|</span> <a href="#">Privacy Policy</a><span
-                                className="pr-2 pl-2">|</span><a href="#">Terms of Use</a></div>
-                            <div className="col-12 col-md-4 text-md-right pt-2 pt-md-0">
-                                <div className="d-inline-block">
-                                    <span className="d-inline-block mt-2 mr-2">Powered by</span>
-                                    <a href="https://www.gyftr.com/" target="_blank" className="float-right"><img
-                                        src="images/footer-logo.png" alt="GyFtr"/></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </footer>
     )
 }
