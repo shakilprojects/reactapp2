@@ -6,7 +6,7 @@ import Login from "../../components/Pages/Login";
 import Otp from "../../components/Pages/Otp";
 
 
-class Web extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super();
         this.state = {
@@ -39,4 +39,4 @@ class Web extends React.Component {
     }
 }
 
-export default Web
+export default Home

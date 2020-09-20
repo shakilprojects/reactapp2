@@ -1,5 +1,15 @@
 import React from "react";
 import axios from "axios";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
+
+// import Redirect from "react-router/modules/Redirect";
 
 class Login extends React.Component {
 
@@ -59,6 +69,7 @@ class Login extends React.Component {
                     this.setState({
                         data:response.data.data
                     });
+                    // <Redirect to="/courses" />
                 }
             })
             .catch(error => {
@@ -70,6 +81,9 @@ class Login extends React.Component {
             })
     }
 
+    componentDidMount() {
+        console.log('did mount');
+    }
 
     render() {
         const formResponse = this.state;

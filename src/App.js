@@ -4,19 +4,42 @@ import logo from './logo.svg';
 import './css/bootstrap.min.css';
 import './css/footer-style.css';
 import './css/styles.css';
-import Home from "./container/test/Home";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Pages/Login";
 import Catalogue from "./components/Pages/Catalogoue";
-import Web from "./container/Web/Web";
+import Home from "./container/Home/Home";
+import Courses from "./container/courses/Courses";
+
 
 
 function App() {
   return (
-    <div className="App">
-        <Web></Web>
-    </div>
+    <Router>
+        <div className="App">
+            <Switch>
+                <Route exact path="/">
+                    <Home></Home>
+                </Route>
+                <Route path="/courses">
+                    <Courses />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
+
+        </div>
+    </Router>
   );
 }
 
